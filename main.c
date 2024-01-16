@@ -44,4 +44,17 @@ void mostrarDatos(struct alumno *alumno)
     printf("Promedio: %.2f\n", alumno->promedio);
 }
 
+int main()
+{
+    struct alumno unAlumno;
+
+    // Obtener datos del único alumno
+    obtenerDatos(&unAlumno);
+
+    // Mostrar datos del único alumno
+    mostrarDatos(&unAlumno);
+
+    return 0;
+}
+
 
