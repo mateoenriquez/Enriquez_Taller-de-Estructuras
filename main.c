@@ -10,6 +10,7 @@ struct alumno
 };
 
 void obtenerDatos(struct alumno *alumno);
+void mostrarDatos(struct alumno *alumno);
 
 void obtenerDatos(struct alumno *alumno)
 {
@@ -31,6 +32,16 @@ void obtenerDatos(struct alumno *alumno)
 
     printf("Promedio: ");
     scanf("%f", &alumno->promedio);
+}
+
+void mostrarDatos(struct alumno *alumno)
+{
+    printf("\nDatos del alumno:\n");
+    printf("Matricula: %d\n", alumno->matricula);
+    printf("Nombre: %s\n", alumno->nombre);
+    printf("Dirección: %s\n", alumno->direccion);
+    printf("Carrera: %s\n", alumno->carrera);
+    printf("Promedio: %.2f\n", alumno->promedio);
 }
 
 
